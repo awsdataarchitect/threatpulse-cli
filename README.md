@@ -10,7 +10,7 @@ pip install threatpulse
 
 ## Authentication
 
-ThreatPulse offers 10 free lookups/day. For unlimited access, purchase an API key at [threatpulse.waltsoft.net](https://threatpulse.waltsoft.net).
+ThreatPulse requires an API key for CLI usage. Purchase at [threatpulse.waltsoft.net](https://threatpulse.waltsoft.net).
 
 ```bash
 # Set once (recommended)
