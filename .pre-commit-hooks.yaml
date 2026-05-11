@@ -1,0 +1,9 @@
+# .pre-commit-hooks.yaml
+- id: threatpulse-check
+  name: ThreatPulse Vulnerability Check
+  description: Block commits with weaponized vulnerabilities
+  entry: threatpulse scan
+  language: python
+  additional_dependencies: ['threatpulse']
+  files: '(package-lock\.json|requirements\.txt|Cargo\.lock|go\.sum|Gemfile\.lock|pnpm-lock\.yaml)$'
+  args: ['--threshold', '70']
