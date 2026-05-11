@@ -1,0 +1,26 @@
+[project]
+name = "threatpulse"
+version = "0.2.0"
+description = "Scan your dependencies for weaponized vulnerabilities. Powered by ThreatPulse x402."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "WaltSoft", email = "vivek@waltsoft.net"}]
+dependencies = ["requests>=2.28", "click>=8.0"]
+keywords = ["security", "vulnerability", "cve", "exploit", "sbom", "devsecops"]
+classifiers = [
+    "Topic :: Security",
+    "Topic :: Software Development :: Quality Assurance",
+    "Environment :: Console",
+]
+
+[project.urls]
+Homepage = "https://threatpulse.waltsoft.net"
+Repository = "https://github.com/awsdataarchitect/threatpulse-cli"
+
+[project.scripts]
+threatpulse = "threatpulse.cli:cli"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
