@@ -1,6 +1,6 @@
 [project]
 name = "threatpulse"
-version = "0.2.0"
+version = "0.2.1"
 description = "Scan your dependencies for weaponized vulnerabilities. Powered by ThreatPulse x402."
 readme = "README.md"
 requires-python = ">=3.9"
